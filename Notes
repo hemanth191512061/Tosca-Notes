@@ -1,0 +1,78 @@
+-------------------Tosca--------------------------
+*Modules
+*TestCases
+
+
+
+Modules--used to scan the application and get required webelements
+*Standard Modules(Tosca default modules)
+*UserDefined Modules(user)
+
+How to identify elements:
+*Identify by properties
+*Identify by anchor
+*Identify by Image
+*Identify by Index
+
+TestCases--Used to perform action on modules
+
+Action Modes:
+*Buffer--To get value from text box
+*Input--Input the value
+*Verify--to verify the value
+*WaitOn
+*Select
+*Insert
+*Constraint
+
+TBox Start Program:(Modules---standard modules---TBox Automation Tools--Process Operations)
+*Path--chrome
+*Directory
+*Argument--URL
+
+TBox Wait:(Modules---standard modules---TBox Automation Tools---Timings)
+to wait for
+
+TBox Set Buffer:(Modules---standard modules---TBox Automation Tools--Buffer Operations)
+*Used to store values
+
+
+Reusable Test Block(RTB):
+*Create Libraby on Test Case level
+
+Test Configuration Parameter:
+*Used to declare values globally and using by{CP[]} in test steps
+
+Business Parameter:
+*Created below library folder 
+
+Execution--->ExecutionList-- To run all testcases at once
+
+-----------API Testing----------
+*Client-->API---->Server----->API----->Client
+*API is performed at message layer.
+*Request Operations in API----Get,Post,Put,Delete
+
+----Conditional Loops---
+*If loop
+*Do While loop
+*While loop
+
+
+*{MATH[{B[Counter]}+1]}--To increment the variable
+
+*ConstraintIndex--configuration parameter in Module to manage multiple screens at one time
+
+*{Mouse[Drag]} {Mouse[Drop]}
+
+*{SENDKEYS["{Enter}"]}
+
+-------Test Case Design----------
+*Folder
+*Test Sheet
+*Atribute,Atirbute(not business relevent),Atribute Result
+*Step
+*Instance Collection
+*Instance
+*Class
+*Class Reference
